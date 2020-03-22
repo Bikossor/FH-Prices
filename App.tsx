@@ -1,9 +1,7 @@
 import React from 'react';
-import { View, TextInput, Text, FlatList, ScrollView, Button } from 'react-native';
-import { IComponentProps } from 'interface/IComponentProps';
-import { IComponentState } from 'interface/IComponentState';
+import { View, TextInput, Text, FlatList, ScrollView } from 'react-native';
+import { IComponentProps, IComponentState } from 'interface';
 
-import { Notifications } from 'expo';
 import {
 	Abarth, Acura, AlfaRomeo, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, Audi, Austin, AustinHealey, AutoUnion,
 	BAC, Bentley, BMW,
@@ -42,27 +40,22 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 	}
 
 	filterCars = (text: string) => {
-		var filteredData = this.state.fullData.filter(carItem => {
-			return carItem.manufacturer.toLowerCase().includes(text.toLowerCase()) ||
-				carItem.model.toLowerCase().includes(text.toLowerCase())
-		}).sort((a, b) => {
-			return b.price - a.price
-		});
+		const filteredData = this.state.fullData.filter(vehicle => 
+			vehicle.manufacturer.toLowerCase().includes(text.toLowerCase()) ||
+			vehicle.model.toLowerCase().includes(text.toLowerCase())
+		);
+
+		const sortedFilteredData = filteredData.sort((a, b) =>
+			b.price - a.price
+		);
 
 		this.setState({
-			data: filteredData
+			data: sortedFilteredData
 		});
 	}
 
 	formatMoney = (price: number): string => {
 		return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " $";
-	}
-
-	openOptionModal = async () => {
-		Notifications.presentLocalNotificationAsync({
-			title: "Hallo Welt!",
-			body: "Miau 🐱"
-		});
 	}
 
 	render() {
@@ -76,7 +69,6 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 						onChangeText={this.filterCars}
 						clearButtonMode="while-editing"
 					/>
-					<Button title="Options" onPress={this.openOptionModal} />
 				</View>
 				<ScrollView style={{ width: '100%', flex: 1 }}>
 					<FlatList
