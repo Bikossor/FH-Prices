@@ -6,7 +6,7 @@ import { IComponentState } from 'interface/IComponentState';
 import { Notifications } from 'expo';
 import {
 	Abarth, Acura, AlfaRomeo, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, Audi, Austin, AustinHealey, AutoUnion,
-	BAC,
+	BAC, Bentley,
 	MercedesBenz
 } from './src/data';
 
@@ -34,6 +34,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				AustinHealey,
 				AutoUnion,
 				BAC,
+				Bentley,
 				MercedesBenz
 			)
 		};
