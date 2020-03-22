@@ -4,6 +4,7 @@ import { IComponentProps } from 'interface/IComponentProps';
 import { IComponentState } from 'interface/IComponentState';
 
 import { Notifications } from 'expo';
+import { ForzaEditionBoost } from './src/enum/ForzaEditionBoost';
 
 export default class App extends React.Component<IComponentProps, IComponentState> {
 	constructor(props: Readonly<IComponentProps>) {
@@ -66,7 +67,8 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					manufacturer: 'Alfa Romero',
 					model: 'Giulia Quadrifoglio',
 					price: 370000,
-					forzaEdition: true
+					forzaEdition: true,
+					forzaEditionBoost: ForzaEditionBoost.EventInfluence
 				},
 				{
 					key: '9',
@@ -85,7 +87,8 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					manufacturer: 'Alfa Romero',
 					model: '8C Competizione',
 					price: 550000,
-					forzaEdition: true
+					forzaEdition: true,
+					forzaEditionBoost: ForzaEditionBoost.Credits
 				},
 				{
 					key: '12',
@@ -128,7 +131,8 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					manufacturer: 'Alumi Craft',
 					model: 'Class 10 Race Car',
 					price: 350000,
-					forzaEdition: true
+					forzaEdition: true,
+					forzaEditionBoost: ForzaEditionBoost.DestructionSkills
 				},
 				{
 					key: '19',
@@ -177,7 +181,8 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					manufacturer: 'Mercedes-Benz',
 					model: 'SL 65 AMG Black Series',
 					price: 460000,
-					forzaEdition: true
+					forzaEdition: true,
+					forzaEditionBoost: ForzaEditionBoost.DriftSkills
 				},
 			]
 		};
@@ -229,6 +234,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 									<Text style={{ fontWeight: 'bold' }}>{item.manufacturer} </Text>
 									<Text>{item.model} </Text>
 									<Text>{item.forzaEdition ? "(FE)" : ""}</Text>
+									<Text>{item.forzaEdition ? item.forzaEditionBoost : ""}</Text>
 								</View>
 								<View style={{ display: 'flex' }}>
 									<Text>{this.formatMoney(item.price)}</Text>
