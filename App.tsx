@@ -165,6 +165,12 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					price: 1050000
 				},
 				{
+					key: '24',
+					manufacturer: 'Alpine',
+					model: 'A110',
+					price: 250000
+				},
+				{
 					key: '1000',
 					manufacturer: 'Mercedes-Benz',
 					model: 'AMG CLK GTR',
