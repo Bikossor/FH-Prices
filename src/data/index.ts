@@ -10,4 +10,5 @@ export { Ariel } from './Ariel';
 export { Ascari } from './Ascari';
 export { AstonMartin } from './AstonMartin';
 export { ATS } from './ATS';
+export { Audi } from './Audi';
 export { MercedesBenz } from './MercedesBenz';

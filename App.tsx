@@ -4,7 +4,7 @@ import { IComponentProps } from 'interface/IComponentProps';
 import { IComponentState } from 'interface/IComponentState';
 
 import { Notifications } from 'expo';
-import { Abarth, Acura, AlfaRomero, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, MercedesBenz } from './src/data';
+import { Abarth, Acura, AlfaRomero, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, Audi, MercedesBenz } from './src/data';
 
 export default class App extends React.Component<IComponentProps, IComponentState> {
 	constructor(props: Readonly<IComponentProps>) {
@@ -25,6 +25,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				Ascari,
 				AstonMartin,
 				ATS,
+				Audi,
 				MercedesBenz
 			)
 		};
