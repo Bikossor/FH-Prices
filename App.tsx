@@ -189,6 +189,98 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 					price: 240000
 				},
 				{
+					key: '28',
+					manufacturer: 'Aston Martin',
+					model: 'DBS Superleggera',
+					price: 250000
+				},
+				{
+					key: '29',
+					manufacturer: 'Aston Martin',
+					model: 'Vantage',
+					price: 430000
+				},
+				{
+					key: '30',
+					manufacturer: 'Aston Martin',
+					model: 'DB11',
+					price: 300000
+				},
+				{
+					key: '31',
+					manufacturer: 'Aston Martin',
+					model: 'DB11 (Pre-Order Car)',
+					price: 300000
+				},
+				{
+					key: '32',
+					manufacturer: 'Aston Martin',
+					model: 'Vanquish Zagato Coupe',
+					price: 250000
+				},
+				{
+					key: '33',
+					manufacturer: 'Aston Martin',
+					model: 'Vulcan AMR Pro',
+					price: 1500000
+				},
+				{
+					key: '34',
+					manufacturer: 'Aston Martin',
+					model: 'Vantage GT12',
+					price: 400000
+				},
+				{
+					key: '35',
+					manufacturer: 'Aston Martin',
+					model: 'Vulcan',
+					price: 1500000
+				},
+				{
+					key: '36',
+					manufacturer: 'Aston Martin',
+					model: 'Vulcan',
+					price: 1750000,
+					forzaEdition: true,
+					forzaEditionBoost: ForzaEditionBoost.CleanSkills
+				},
+				{
+					key: '37',
+					manufacturer: 'Aston Martin',
+					model: 'V12 Vantage S',
+					price: 240000
+				},
+				{
+					key: '38',
+					manufacturer: 'Aston Martin',
+					model: 'Vanquish',
+					price: 348000
+				},
+				{
+					key: '39',
+					manufacturer: 'Aston Martin',
+					model: 'One-77',
+					price: 1400000
+				},
+				{
+					key: '40',
+					manufacturer: 'Aston Martin',
+					model: 'DB5',
+					price: 800000
+				},
+				{
+					key: '41',
+					manufacturer: 'Aston Martin',
+					model: 'DB4 GT Zagato',
+					price: 500000
+				},
+				{
+					key: '42',
+					manufacturer: 'Aston Martin',
+					model: 'DBR1',
+					price: 10000000
+				},
+				{
 					key: '1000',
 					manufacturer: 'Mercedes-Benz',
 					model: 'AMG CLK GTR',
