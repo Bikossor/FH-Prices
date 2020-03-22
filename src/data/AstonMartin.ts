@@ -33,7 +33,7 @@ export const AstonMartin: Array<IVehicle> = [
     {
         key: 'AstonMartin-4',
         manufacturer: 'Aston Martin',
-        model: 'Vanquish Zagato Coupe',
+        model: 'Vanquish Zagato Coupé',
         year: 2017,
         price: 250000
     },

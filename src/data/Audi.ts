@@ -18,7 +18,7 @@ export const Audi: Array<IVehicle> = [
     {
         key: 'Audi-2',
         manufacturer: 'Audi',
-        model: 'TTS Coupe',
+        model: 'TTS Coupé',
         year: 2015,
         price: 52000
     },
@@ -53,7 +53,7 @@ export const Audi: Array<IVehicle> = [
     {
         key: 'Audi-7',
         manufacturer: 'Audi',
-        model: 'RS5 Coupe',
+        model: 'RS5 Coupé',
         year: 2011,
         price: 88000
     },
@@ -67,7 +67,7 @@ export const Audi: Array<IVehicle> = [
     {
         key: 'Audi-9',
         manufacturer: 'Audi',
-        model: 'TTRS Coupe',
+        model: 'TTRS Coupé',
         year: 2010,
         price: 66000
     },
