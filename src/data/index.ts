@@ -17,5 +17,6 @@ export { AutoUnion } from './AutoUnion';
 
 export { BAC } from './BAC';
 export { Bentley } from './Bentley';
+export { BMW } from './BMW';
 
 export { MercedesBenz } from './MercedesBenz';
