@@ -1,6 +1,6 @@
 export { Abarth } from './Abarth';
 export { Acura } from './Acura';
-export { AlfaRomero } from './AlfaRomero';
+export { AlfaRomeo } from './AlfaRomeo';
 export { AlumiCraft } from './AlumiCraft';
 export { AMC } from './AMC';
 export { AMGTransportDynamics } from './AMGTransportDynamics';
