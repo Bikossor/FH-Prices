@@ -12,4 +12,5 @@ export { AstonMartin } from './AstonMartin';
 export { ATS } from './ATS';
 export { Audi } from './Audi';
 export { Austin } from './Austin';
+export { AustinHealey } from './AustinHealey';
 export { MercedesBenz } from './MercedesBenz';
