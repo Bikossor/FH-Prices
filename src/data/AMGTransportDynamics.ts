@@ -2,7 +2,7 @@ import { IVehicle } from '../interface/IVehicle';
 
 export const AMGTransportDynamics: Array<IVehicle> = [
     {
-        key: '22',
+        key: 'AMGTransportDynamics-0',
         manufacturer: 'AMG Transport Dynamics',
         model: 'M12S Warthog CST',
         year: 2554,

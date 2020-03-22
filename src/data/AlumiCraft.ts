@@ -3,14 +3,14 @@ import { ForzaEditionBoost } from '../enum/ForzaEditionBoost';
 
 export const AlumiCraft: Array<IVehicle> = [
     {
-        key: '17',
+        key: 'AlumiCraft-0',
         manufacturer: 'Alumi Craft',
         model: 'Class 10 Race Car',
         year: 2015,
         price: 100000
     },
     {
-        key: '18',
+        key: 'AlumiCraft-1',
         manufacturer: 'Alumi Craft',
         model: 'Class 10 Race Car',
         year: 2015,

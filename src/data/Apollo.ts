@@ -2,7 +2,7 @@ import { IVehicle } from '../interface/IVehicle';
 
 export const Apollo: Array<IVehicle> = [
     {
-        key: '23',
+        key: 'Apollo-0',
         manufacturer: 'Apollo',
         model: 'Intensa Emozione',
         year: 2018,
