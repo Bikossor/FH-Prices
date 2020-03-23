@@ -7,6 +7,7 @@ import {
 	BAC, Bentley, BMW,
 	MercedesBenz
 } from './src/data';
+import { styleSheet } from './src/StyleSheet';
 
 export default class App extends React.Component<IComponentProps, IComponentState> {
 	constructor(props: Readonly<IComponentProps>) {
@@ -60,29 +61,29 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 
 	render() {
 		return (
-			<View style={{ flex: 1, flexDirection: 'column' }}>
-				<View style={{ width: '100%', height: 24, backgroundColor: '#000' }} />
-				<View style={{ width: '100%', height: 64, backgroundColor: '#000', paddingHorizontal: 24, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+			<View style={[styleSheet.mainContainer]}>
+				<View style={[styleSheet.statusBar]} />
+				<View style={[styleSheet.searchBar]}>
 					<TextInput
-						style={{ height: 40, color: '#fff', borderColor: '#ccc', borderWidth: 1, paddingHorizontal: 16, borderRadius: 24, flex: 1 }}
+						style={[styleSheet.searchInput]}
 						placeholder="Type here to search"
 						onChangeText={this.filterCars}
 						clearButtonMode="while-editing"
 					/>
 				</View>
-				<ScrollView style={{ width: '100%', flex: 1 }}>
+				<ScrollView style={[styleSheet.mainScrollView]}>
 					<FlatList
 						data={this.state.data}
 						renderItem={({ item }) =>
-							<View style={{ backgroundColor: item.forzaEdition ? "#ce93d8" : "#ccc", padding: 16, marginBottom: 8, display: 'flex', flexDirection: 'row' }}>
-								<View style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
-									<Text style={{ fontStyle: 'italic' }}>{item.year} </Text>
-									<Text style={{ fontWeight: 'bold' }}>{item.manufacturer} </Text>
+							<View style={[styleSheet.flatListItem, { backgroundColor: item.forzaEdition ? "#ce93d8" : "#ccc" }]}>
+								<View style={[styleSheet.listItemContainer]}>
+									<Text style={[styleSheet.fontItalic]}>{item.year} </Text>
+									<Text style={[styleSheet.fontBold]}>{item.manufacturer} </Text>
 									<Text>{item.model} </Text>
 									<Text>{item.forzaEdition ? "(FE)" : ""}</Text>
 									<Text>{item.forzaEdition ? item.forzaEditionBoost : ""}</Text>
 								</View>
-								<View style={{ display: 'flex' }}>
+								<View style={[styleSheet.flex]}>
 									<Text>{this.formatMoney(item.price)}</Text>
 								</View>
 							</View>
