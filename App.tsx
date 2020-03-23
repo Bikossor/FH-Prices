@@ -40,10 +40,10 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 	}
 
 	filterCars = (text: string) => {
-		const filteredData = this.state.fullData.filter(vehicle => 
-			vehicle.manufacturer.toLowerCase().includes(text.toLowerCase()) ||
-			vehicle.model.toLowerCase().includes(text.toLowerCase())
-		);
+		const filteredData = this.state.fullData.filter(vehicle => {
+			const searchStringTemplate = `${vehicle.manufacturer.toLowerCase()} ${vehicle.model.toLowerCase()}`;
+			return searchStringTemplate.includes(text.toLowerCase());
+		});
 
 		const sortedFilteredData = filteredData.sort((a, b) =>
 			b.price - a.price
