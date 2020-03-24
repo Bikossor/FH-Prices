@@ -19,5 +19,6 @@ export { BAC } from './BAC';
 export { Bentley } from './Bentley';
 export { BMW } from './BMW';
 export { Bowler } from './Bowler';
+export { Bugatti } from './Bugatti';
 
 export { MercedesBenz } from './MercedesBenz';
