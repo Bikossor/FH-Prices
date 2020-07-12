@@ -6,6 +6,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
     "baseUrl": "src",
     "paths": {
       "interface/*": ["interface/*"]

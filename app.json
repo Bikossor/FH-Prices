@@ -2,8 +2,6 @@
   "expo": {
     "name": "ForzaHorizonPrices",
     "slug": "ForzaHorizonPrices",
-    "privacy": "public",
-    "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
       "android",
@@ -28,6 +26,9 @@
     },
     "android": {
       "package": "de.Bikossor.ForzaHorizonPrices"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
