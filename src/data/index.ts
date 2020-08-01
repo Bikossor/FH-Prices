@@ -24,5 +24,6 @@ export { Buick } from './Buick';
 
 export { Cadillac } from './Cadillac';
 export { CanAm } from './CanAm';
+export { Caterham } from './Caterham';
 
 export { MercedesBenz } from './MercedesBenz';
