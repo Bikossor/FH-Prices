@@ -22,4 +22,6 @@ export { Bowler } from './Bowler';
 export { Bugatti } from './Bugatti';
 export { Buick } from './Buick';
 
+export { Cadillac } from './Cadillac';
+
 export { MercedesBenz } from './MercedesBenz';

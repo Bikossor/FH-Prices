@@ -5,6 +5,7 @@ import { IComponentProps, IComponentState } from 'interface';
 import {
 	Abarth, Acura, AlfaRomeo, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, Audi, Austin, AustinHealey, AutoUnion,
 	BAC, Bentley, BMW, Bowler, Bugatti, Buick,
+	Cadillac,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -38,6 +39,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...Bowler,
 				...Bugatti,
 				...Buick,
+				...Cadillac,
 				...MercedesBenz
       		]
 		};
