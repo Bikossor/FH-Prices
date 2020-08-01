@@ -7,6 +7,7 @@ import {
 	BAC, Bentley, BMW, Bowler, Bugatti, Buick,
 	Cadillac, CanAm, Caterham, Chevrolet, Chrysler,
 	Datsun, Dodge, Donkervoort, DSAutomobiles,
+	Eagle,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -50,6 +51,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...Dodge,
 				...Donkervoort,
 				...DSAutomobiles,
+				...Eagle,
 				...MercedesBenz
       		]
 		};
