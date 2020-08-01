@@ -30,5 +30,6 @@ export { Chrysler } from './Chrysler';
 
 export { Datsun } from './Datsun';
 export { Dodge } from './Dodge';
+export { Donkervoort } from './Donkervoort';
 
 export { MercedesBenz } from './MercedesBenz';
