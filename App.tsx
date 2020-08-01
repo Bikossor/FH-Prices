@@ -6,6 +6,7 @@ import {
 	Abarth, Acura, AlfaRomeo, Alpine, AlumiCraft, AMC, AMGTransportDynamics, Apollo, Ariel, Ascari, AstonMartin, ATS, Audi, Austin, AustinHealey, AutoUnion,
 	BAC, Bentley, BMW, Bowler, Bugatti, Buick,
 	Cadillac, CanAm, Caterham, Chevrolet, Chrysler,
+	Datsun,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -45,6 +46,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...Caterham,
 				...Chevrolet,
 				...Chrysler,
+				...Datsun,
 				...MercedesBenz
       		]
 		};

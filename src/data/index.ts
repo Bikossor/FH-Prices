@@ -28,4 +28,6 @@ export { Caterham } from './Caterham';
 export { Chevrolet } from './Chevrolet';
 export { Chrysler } from './Chrysler';
 
+export { Datsun } from './Datsun';
+
 export { MercedesBenz } from './MercedesBenz';
