@@ -1,11 +1,11 @@
 export { Abarth } from './Abarth';
 export { Acura } from './Acura';
 export { AlfaRomeo } from './AlfaRomeo';
+export { Alpine } from './Alpine';
 export { AlumiCraft } from './AlumiCraft';
 export { AMC } from './AMC';
 export { AMGTransportDynamics } from './AMGTransportDynamics';
 export { Apollo } from './Apollo';
-export { Alpine } from './Alpine';
 export { Ariel } from './Ariel';
 export { Ascari } from './Ascari';
 export { AstonMartin } from './AstonMartin';
