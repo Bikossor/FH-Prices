@@ -34,5 +34,6 @@ export { Donkervoort } from './Donkervoort';
 export { DSAutomobiles } from './DSAutomobiles';
 
 export { Eagle } from './Eagle';
+export { Exomotive } from './Exomotive';
 
 export { MercedesBenz } from './MercedesBenz';
