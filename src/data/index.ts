@@ -39,5 +39,6 @@ export { Exomotive } from './Exomotive';
 export { Ferrari } from './Ferrari';
 export { Fiat } from './Fiat';
 export { Ford } from './Ford';
+export { FormulaDrift } from './FormulaDrift';
 
 export { MercedesBenz } from './MercedesBenz';

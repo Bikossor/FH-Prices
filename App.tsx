@@ -8,7 +8,7 @@ import {
 	Cadillac, CanAm, Caterham, Chevrolet, Chrysler,
 	Datsun, Dodge, Donkervoort, DSAutomobiles,
 	Eagle, Exomotive,
-	Ferrari, Fiat, Ford,
+	Ferrari, Fiat, Ford, FormulaDrift,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -57,6 +57,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...Ferrari,
 				...Fiat,
 				...Ford,
+				...FormulaDrift,
 				...MercedesBenz
       		]
 		};
