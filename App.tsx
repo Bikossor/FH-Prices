@@ -9,6 +9,7 @@ import {
 	Datsun, Dodge, Donkervoort, DSAutomobiles,
 	Eagle, Exomotive,
 	Ferrari, Fiat, Ford, FormulaDrift, FuncoMotorsports,
+	GMC,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -59,6 +60,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...Ford,
 				...FormulaDrift,
 				...FuncoMotorsports,
+				...GMC,
 				...MercedesBenz
       		]
 		};

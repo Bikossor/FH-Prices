@@ -42,4 +42,6 @@ export { Ford } from './Ford';
 export { FormulaDrift } from './FormulaDrift';
 export { FuncoMotorsports } from './FuncoMotorsports';
 
+export { GMC } from './GMC';
+
 export { MercedesBenz } from './MercedesBenz';
