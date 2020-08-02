@@ -46,5 +46,6 @@ export { GMC } from './GMC';
 
 export { HDT } from './HDT';
 export { Hennessey } from './Hennessey';
+export { Hillman } from './Hillman';
 
 export { MercedesBenz } from './MercedesBenz';
