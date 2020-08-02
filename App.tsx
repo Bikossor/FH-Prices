@@ -11,7 +11,8 @@ import {
 	Ferrari, Fiat, Ford, FormulaDrift, FuncoMotorsports,
 	GMC,
 	HDT,
-	MercedesBenz
+	MercedesBenz,
+	Hennessey
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
 
@@ -63,6 +64,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...FuncoMotorsports,
 				...GMC,
 				...HDT,
+				...Hennessey,
 				...MercedesBenz
       		]
 		};
