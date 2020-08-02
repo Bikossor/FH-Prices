@@ -37,14 +37,14 @@ export const FormulaDrift: Array<IVehicle> = [
         price: 300000
     },
     {
-        key: 'FormulaDrift-4',
+        key: 'FormulaDrift-5',
         manufacturer: 'Formula Drift',
         model: '#118 Nissan 240SX',
         year: 1995,
         price: 300000
     },
     {
-        key: 'FormulaDrift-5',
+        key: 'FormulaDrift-6',
         manufacturer: 'Formula Drift',
         model: '#98 BMW 325i',
         year: 1989,
