@@ -8,6 +8,7 @@ import {
 	Cadillac, CanAm, Caterham, Chevrolet, Chrysler,
 	Datsun, Dodge, Donkervoort, DSAutomobiles,
 	Eagle, Exomotive,
+	Ferrari,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -53,6 +54,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...DSAutomobiles,
 				...Eagle,
 				...Exomotive,
+				...Ferrari,
 				...MercedesBenz
       		]
 		};
