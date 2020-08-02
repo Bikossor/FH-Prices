@@ -44,4 +44,6 @@ export { FuncoMotorsports } from './FuncoMotorsports';
 
 export { GMC } from './GMC';
 
+export { HDT } from './HDT';
+
 export { MercedesBenz } from './MercedesBenz';

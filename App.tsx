@@ -10,6 +10,7 @@ import {
 	Eagle, Exomotive,
 	Ferrari, Fiat, Ford, FormulaDrift, FuncoMotorsports,
 	GMC,
+	HDT,
 	MercedesBenz
 } from './src/data';
 import { styleSheet } from './src/StyleSheet';
@@ -61,6 +62,7 @@ export default class App extends React.Component<IComponentProps, IComponentStat
 				...FormulaDrift,
 				...FuncoMotorsports,
 				...GMC,
+				...HDT,
 				...MercedesBenz
       		]
 		};
