@@ -40,5 +40,6 @@ export { Ferrari } from './Ferrari';
 export { Fiat } from './Fiat';
 export { Ford } from './Ford';
 export { FormulaDrift } from './FormulaDrift';
+export { FuncoMotorsports } from './FuncoMotorsports';
 
 export { MercedesBenz } from './MercedesBenz';
