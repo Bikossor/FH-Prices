@@ -37,5 +37,6 @@ export { Eagle } from './Eagle';
 export { Exomotive } from './Exomotive';
 
 export { Ferrari } from './Ferrari';
+export { Fiat } from './Fiat';
 
 export { MercedesBenz } from './MercedesBenz';
