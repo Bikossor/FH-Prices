@@ -5,7 +5,7 @@ type EntryCardProps = {
   manufacturer: string;
   model: string;
   year: number;
-  price: number;
+  price: number | null;
   type: string;
   rarity: string;
 };
