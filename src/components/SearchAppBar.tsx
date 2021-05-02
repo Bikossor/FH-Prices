@@ -71,7 +71,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function SearchAppBar() {
+type SearchAppBarProps = {
+  onSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+};
+
+export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
   const classes = useStyles();
 
   return (
@@ -101,6 +105,7 @@ export default function SearchAppBar() {
                 input: classes.inputInput,
               }}
               inputProps={{ "aria-label": "search" }}
+              onChange={onSearchChange}
             />
           </div>
         </Toolbar>
