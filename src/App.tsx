@@ -6,6 +6,13 @@ import { FH4 } from "./data/FH4";
 import EntryCard from "./components/EntryCard";
 import { Vehicle } from "./types/Vehicle";
 
+const filterEntries = (searchText: string) =>
+  FH4.filter(
+    (car) =>
+      car.Manufacturer.toLowerCase().includes(searchText) ||
+      car.Model.toLowerCase().includes(searchText)
+  );
+
 function App() {
   const [entries, setEntries] = useState<Array<Vehicle>>(FH4);
 
@@ -13,17 +20,7 @@ function App() {
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <SearchAppBar
         onSearchChange={(event) => {
-          setEntries(
-            FH4.filter(
-              (car) =>
-                car.Manufacturer.toLowerCase().includes(
-                  event.currentTarget.value.toLowerCase()
-                ) ||
-                car.Model.toLowerCase().includes(
-                  event.currentTarget.value.toLowerCase()
-                )
-            )
-          );
+          setEntries(filterEntries(event.currentTarget.value.toLowerCase()));
         }}
       />
       <main>
