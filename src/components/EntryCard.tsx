@@ -10,6 +10,12 @@ type EntryCardProps = {
   rarity: string;
 };
 
+const currentFormatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  maximumFractionDigits: 0,
+});
+
 export default function EntryCard({
   manufacturer,
   model,
@@ -38,7 +44,7 @@ export default function EntryCard({
               {manufacturer} {model}
             </Typography>
             <Typography variant="h5" component="h2">
-              {price} $
+              {price !== null ? currentFormatter.format(price) : "No price"}
             </Typography>
           </div>
           <div style={{ display: "flex", flexDirection: "row" }}>
