@@ -1,16 +1,30 @@
-import React from 'react';
-import './App.css';
-import SearchAppBar from './components/SearchAppBar';
+import React, { useState } from "react";
+import "./App.css";
+import SearchAppBar from "./components/SearchAppBar";
 
 import { FH4 } from "./data/FH4";
-import EntryCard from './components/EntryCard';
+import EntryCard from "./components/EntryCard";
+import { Vehicle } from "./types/Vehicle";
+
+const filterEntries = (searchText: string) =>
+  FH4.filter(
+    (car) =>
+      car.Manufacturer.toLowerCase().includes(searchText) ||
+      car.Model.toLowerCase().includes(searchText)
+  );
 
 function App() {
+  const [entries, setEntries] = useState<Array<Vehicle>>(FH4);
+
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-      <SearchAppBar />
+      <SearchAppBar
+        onSearchChange={(event) => {
+          setEntries(filterEntries(event.currentTarget.value.toLowerCase()));
+        }}
+      />
       <main>
-        {FH4.map(car => 
+        {entries.map((car) => (
           <EntryCard
             manufacturer={car.Manufacturer}
             model={car.Model}
@@ -20,7 +34,7 @@ function App() {
             year={car.Year}
             key={`${car.Year} ${car.Manufacturer} ${car.Model}`}
           />
-        )}
+        ))}
       </main>
     </div>
   );
