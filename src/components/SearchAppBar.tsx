@@ -12,6 +12,8 @@ import {
 } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
+import FilterListRoundedIcon from "@material-ui/icons/FilterListRounded";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -20,6 +22,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     menuButton: {
       marginRight: theme.spacing(2),
+    },
+    filterButton: {
+      marginLeft: theme.spacing(2),
     },
     title: {
       flexGrow: 1,
@@ -108,6 +113,14 @@ export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
               onChange={onSearchChange}
             />
           </div>
+          <Button
+            variant="text"
+            color="inherit"
+            className={classes.filterButton}
+            startIcon={<FilterListRoundedIcon />}
+          >
+            Filter
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
