@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -14,6 +14,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import FilterListRoundedIcon from "@material-ui/icons/FilterListRounded";
 import { Button } from "@material-ui/core";
+import FilterDialog from "./FilterDialog";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -77,11 +78,12 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 type SearchAppBarProps = {
-  onSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  onSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
   const classes = useStyles();
+  const [isFilterDialogOpen, setFilterDialogOpen] = useState(false);
 
   return (
     <div className={classes.root}>
@@ -118,11 +120,17 @@ export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
             color="inherit"
             className={classes.filterButton}
             startIcon={<FilterListRoundedIcon />}
+            onClick={() => setFilterDialogOpen(true)}
           >
             Filter
           </Button>
         </Toolbar>
       </AppBar>
+      <FilterDialog
+        isOpen={isFilterDialogOpen}
+        handleClickOpen={() => setFilterDialogOpen(true)}
+        handleClose={() => setFilterDialogOpen(false)}
+      />
     </div>
   );
 }
