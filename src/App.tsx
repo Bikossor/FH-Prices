@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import SearchAppBar from "./components/SearchAppBar";
 
 import { FH4 } from "./data/FH4";
 import EntryCard from "./components/EntryCard";
-import { Vehicle } from "./types/Vehicle";
+import { useRecoilState } from "recoil";
+import { Entries } from "./Atoms";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -14,7 +15,7 @@ const filterEntries = (searchText: string) =>
   );
 
 function App() {
-  const [entries, setEntries] = useState<Array<Vehicle>>(FH4);
+  const [entries, setEntries] = useRecoilState(Entries);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
