@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@material-ui/core";
+import { VehicleType } from "../types/VehicleType";
 
 type EntryCardProps = {
   manufacturer: string;
   model: string;
   year: number;
   price: number | null;
-  type: string;
+  type: VehicleType;
   rarity: string;
 };
 
