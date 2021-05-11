@@ -186,7 +186,10 @@ export default function FilterDialog({
         </div>
       </DialogContent>
       <DialogActions>
-        <Button autoFocus onClick={handleClose} color="primary">
+        <Button onClick={handleClose} color="primary">
+          Cancel
+        </Button>
+        <Button autoFocus onClick={handleClose} color="secondary" variant="contained">
           Filter
         </Button>
       </DialogActions>
