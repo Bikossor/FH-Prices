@@ -23,7 +23,7 @@ export enum VehicleType {
     RetroSaloons,
     RetroSportsCars,
     RetroSuperCars,
-    RodsandCustoms,
+    RodsAndCustoms,
     SportsUtilityHeroes,
     SuperGT,
     SuperHotHatch,
