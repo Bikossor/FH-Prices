@@ -1,12 +1,14 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@material-ui/core";
+import { VehicleType } from "../types/VehicleType";
+import { strVehicleType } from "../Utils";
 
 type EntryCardProps = {
   manufacturer: string;
   model: string;
   year: number;
   price: number | null;
-  type: string;
+  type: VehicleType;
   rarity: string;
 };
 
@@ -49,7 +51,7 @@ export default function EntryCard({
           </div>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <Typography color="textSecondary" style={{ flex: 1 }}>
-              {type}
+              {strVehicleType(type)}
             </Typography>
             <Typography color="textSecondary">{rarity}</Typography>
           </div>
