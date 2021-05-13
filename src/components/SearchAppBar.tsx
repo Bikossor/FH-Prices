@@ -121,6 +121,7 @@ export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
             className={classes.filterButton}
             startIcon={<FilterListRoundedIcon />}
             onClick={() => setFilterDialogOpen(true)}
+            style={{ display: "none" }}
           >
             Filter
           </Button>
