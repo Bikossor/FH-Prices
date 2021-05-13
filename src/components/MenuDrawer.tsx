@@ -16,20 +16,25 @@ export const MenuDrawer = () => {
   const [aboutDialogState, setAboutDialogState] =
     useRecoilState(AboutDialogAtom);
 
+  const closeMenuDrawer = () => {
+    setMenuDrawerState({ ...menuDrawerState, isOpen: false });
+  };
+
   return (
     <SwipeableDrawer
       anchor="left"
       open={menuDrawerState.isOpen}
       onOpen={() => setMenuDrawerState({ ...menuDrawerState, isOpen: true })}
-      onClose={() => setMenuDrawerState({ ...menuDrawerState, isOpen: false })}
+      onClose={closeMenuDrawer}
     >
       <List style={{ width: "320px" }}>
         <ListItem
           button
           component="button"
-          onClick={() =>
-            setAboutDialogState({ ...aboutDialogState, isOpen: true })
-          }
+          onClick={() => {
+            closeMenuDrawer();
+            setAboutDialogState({ ...aboutDialogState, isOpen: true });
+          }}
         >
           <ListItemIcon>
             <HelpIcon />

@@ -7,6 +7,7 @@ import EntryCard from "./components/EntryCard";
 import { useRecoilState } from "recoil";
 import { Entries } from "./Atoms";
 import { MenuDrawer } from "./components/MenuDrawer";
+import { AboutDialog } from "./components/AboutDialog";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -39,6 +40,7 @@ function App() {
         ))}
       </main>
       <MenuDrawer />
+      <AboutDialog />
     </div>
   );
 }
