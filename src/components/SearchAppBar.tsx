@@ -15,6 +15,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import FilterListRoundedIcon from "@material-ui/icons/FilterListRounded";
 import { Button } from "@material-ui/core";
 import FilterDialog from "./FilterDialog";
+import { useRecoilState } from "recoil";
+import { MenuDrawerAtom } from "../Atoms";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -84,6 +86,7 @@ type SearchAppBarProps = {
 export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
   const classes = useStyles();
   const [isFilterDialogOpen, setFilterDialogOpen] = useState(false);
+  const [menuDrawerState, setMenuDrawerState] = useRecoilState(MenuDrawerAtom);
 
   return (
     <div className={classes.root}>
@@ -94,6 +97,9 @@ export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
+            onClick={() =>
+              setMenuDrawerState({ ...menuDrawerState, isOpen: true })
+            }
           >
             <MenuIcon />
           </IconButton>

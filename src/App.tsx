@@ -6,6 +6,7 @@ import { FH4 } from "./data/FH4";
 import EntryCard from "./components/EntryCard";
 import { useRecoilState } from "recoil";
 import { Entries } from "./Atoms";
+import { MenuDrawer } from "./components/MenuDrawer";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -37,6 +38,7 @@ function App() {
           />
         ))}
       </main>
+      <MenuDrawer />
     </div>
   );
 }
