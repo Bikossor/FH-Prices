@@ -15,7 +15,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
 import { useRecoilState } from "recoil";
 import { AboutDialogAtom } from "../Atoms";
-import { Link } from "@material-ui/core";
+import { Link, Divider } from "@material-ui/core";
+import Package from "../../package.json";
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -86,13 +87,14 @@ export const AboutDialog = () => {
         About
       </DialogTitle>
       <DialogContent>
-        <Typography gutterBottom>
+        <Typography>
           This open-source application is for every Forza Horizon 4 driver who
           wants to know if a car is a good deal or not when buying it at the
           auction house. You can easily search by manufacturer or model name and
           compare prices.
         </Typography>
-        <Typography gutterBottom>
+        <Divider style={{ margin: "1rem 0" }} />
+        <Typography>
           View this project on{" "}
           <Link
             color="secondary"
@@ -102,6 +104,8 @@ export const AboutDialog = () => {
             GitHub
           </Link>
         </Typography>
+        <Typography>App version: v{Package.version}</Typography>
+        <Divider style={{ margin: "1rem 0" }} />
         <Typography>
           Developed by{" "}
           <Link
