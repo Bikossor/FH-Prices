@@ -258,7 +258,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1970,
     Manufacturer: "AMC",
-    Model: 'Rebel "The Machine',
+    Model: 'Rebel "The Machine"',
     Type: VehicleType.ClassicMuscle,
     Boost: "",
     Rarity: "Legendary",
@@ -2128,7 +2128,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1996,
     Manufacturer: "Ferrari",
-    Model: 'F50 GT "Welcome Pack',
+    Model: 'F50 GT "Welcome Pack"',
     Type: VehicleType.ExtremeTrackToys,
     Boost: "",
     Rarity: "Legendary",
@@ -2458,7 +2458,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2017,
     Manufacturer: "Ford",
-    Model: 'GT "Welcome Pack',
+    Model: 'GT "Welcome Pack"',
     Type: VehicleType.ModernSuperCars,
     Boost: "",
     Rarity: "Legendary",
@@ -3041,7 +3041,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1932,
     Manufacturer: "Ford",
-    Model: 'Custom "Double Down',
+    Model: 'Custom "Double Down"',
     Type: VehicleType.RodsAndCustoms,
     Boost: "",
     Rarity: "Rare",
@@ -3052,7 +3052,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1932,
     Manufacturer: "Ford",
-    Model: 'Roadster "Hula Girl',
+    Model: 'Roadster "Hula Girl"',
     Type: VehicleType.RodsAndCustoms,
     Boost: "",
     Rarity: "Epic",
@@ -3514,7 +3514,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2016,
     Manufacturer: "Hoonigan",
-    Model: 'Gymkhana 9 Ford Focus RS RX "Welcome Pack',
+    Model: 'Gymkhana 9 Ford Focus RS RX "Welcome Pack"',
     Type: VehicleType.RallyMonsters,
     Boost: "",
     Rarity: "Legendary",
@@ -3613,7 +3613,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1977,
     Manufacturer: "Hoonigan",
-    Model: "Gymkhana 10 Ford F-150 'Hoonitruck'",
+    Model: 'Gymkhana 10 Ford F-150 "Hoonitruck"',
     Type: VehicleType.ExtremeTrackToys,
     Boost: "",
     Rarity: "Common",
@@ -3723,7 +3723,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1957,
     Manufacturer: "Hot Wheels",
-    Model: "Studebaker Golden Hawk 'Dream Roadster'",
+    Model: 'Studebaker Golden Hawk "Dream Roadster"',
     Type: VehicleType.RodsAndCustoms,
     Boost: "",
     Rarity: "Legendary",
@@ -4262,7 +4262,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1976,
     Manufacturer: "Jeep",
-    Model: 'CJ5 Renegade "Welcome Pack',
+    Model: 'CJ5 Renegade "Welcome Pack"',
     Type: VehicleType.Offroad,
     Boost: "",
     Rarity: "Legendary",
@@ -4482,7 +4482,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2012,
     Manufacturer: "Lamborghini",
-    Model: 'Aventador LP700-4 "Welcome Pack',
+    Model: 'Aventador LP700-4 "Welcome Pack"',
     Type: VehicleType.Hypercars,
     Boost: "",
     Rarity: "Legendary",
@@ -5329,7 +5329,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2013,
     Manufacturer: "McLaren",
-    Model: "P1 'Owen's Edition'",
+    Model: 'P1 "Owen\'s Edition"',
     Type: VehicleType.Hypercars,
     Boost: "",
     Rarity: "Legendary",
@@ -5450,7 +5450,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2017,
     Manufacturer: "Mercedes-Benz",
-    Model: 'E 350 D 4Matic All-Terrain "Project E-AT',
+    Model: 'E 350 D 4Matic All-Terrain "Project E-AT"',
     Type: VehicleType.Offroad,
     Boost: "",
     Rarity: "Epic",
@@ -6957,7 +6957,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1960,
     Manufacturer: "Porsche",
-    Model: '718 RS 60 "Welcome Pack',
+    Model: '718 RS 60 "Welcome Pack"',
     Type: VehicleType.ClassicRacers,
     Boost: "",
     Rarity: "Legendary",
@@ -7375,7 +7375,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 2016,
     Manufacturer: "Subaru",
-    Model: '#199 WRX STI VT15R Rally Car "Welcome Pack',
+    Model: '#199 WRX STI VT15R Rally Car "Welcome Pack"',
     Type: VehicleType.RallyMonsters,
     Boost: "",
     Rarity: "Legendary",
@@ -7606,7 +7606,7 @@ export const FH4: Array<Vehicle> = [
   {
     Year: 1993,
     Manufacturer: "Toyota",
-    Model: '#1 T100 Baja Truck "Welcome Pack',
+    Model: '#1 T100 Baja Truck "Welcome Pack"',
     Type: VehicleType.ExtremeOffroad,
     Boost: "",
     Rarity: "Legendary",
