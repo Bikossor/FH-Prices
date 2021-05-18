@@ -26,18 +26,20 @@ function App() {
           setEntries(filterEntries(event.currentTarget.value.toLowerCase()));
         }}
       />
-      <main>
-        {entries.map((car) => (
-          <EntryCard
-            manufacturer={car.Manufacturer}
-            model={car.Model}
-            price={car.Price}
-            rarity={car.Rarity}
-            type={car.Type}
-            year={car.Year}
-            key={`${car.Year} ${car.Manufacturer} ${car.Model}`}
-          />
-        ))}
+      <main style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ minWidth: "50%", marginTop: "4rem" }}>
+          {entries.map((car) => (
+            <EntryCard
+              manufacturer={car.Manufacturer}
+              model={car.Model}
+              price={car.Price}
+              rarity={car.Rarity}
+              type={car.Type}
+              year={car.Year}
+              key={`${car.Year} ${car.Manufacturer} ${car.Model}`}
+            />
+          ))}
+        </div>
       </main>
       <MenuDrawer />
       <AboutDialog />
