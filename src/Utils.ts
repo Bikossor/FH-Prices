@@ -37,3 +37,18 @@ export const strVehicleType = (type: VehicleType) => {
     "Vintage Racers",
   ][type];
 };
+
+export const getRarityColor = (rarity: string) => {
+  switch (rarity) {
+    case "Common":
+      return "#06794a";
+    case "Rare":
+      return "#2c9fe5";
+    case "Epic":
+      return "#6f26bc";
+    case "Legendary":
+      return "#ff9d00";
+    case "Forza Edition":
+      return "#e257e5";
+  }
+};
