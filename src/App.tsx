@@ -28,7 +28,7 @@ function App() {
       />
       <main style={{ display: "flex", justifyContent: "center" }}>
         <div style={{ minWidth: "50%", marginTop: "4rem" }}>
-          {entries.map((car) => (
+          {entries.map((car, index) => (
             <EntryCard
               manufacturer={car.Manufacturer}
               model={car.Model}
@@ -36,7 +36,7 @@ function App() {
               rarity={car.Rarity}
               type={car.Type}
               year={car.Year}
-              key={`${car.Year} ${car.Manufacturer} ${car.Model}`}
+              key={index}
             />
           ))}
         </div>
