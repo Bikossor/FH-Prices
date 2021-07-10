@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import { VehicleType } from "../types/VehicleType";
-import { strVehicleType } from "../Utils";
+import { getRarityColor, strVehicleType } from "../Utils";
 
 type EntryCardProps = {
   manufacturer: string;
@@ -28,7 +28,7 @@ export default function EntryCard({
 }: EntryCardProps) {
   return (
     <Card variant="outlined" style={{ margin: ".5rem 0" }}>
-      <CardContent style={{ display: "flex", flexDirection: "row" }}>
+      <CardContent style={{ display: "flex", flexDirection: "row", borderRight: `7px solid ${getRarityColor(rarity)}` }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <i
             style={{
