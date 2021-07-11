@@ -13,10 +13,11 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import FilterListRoundedIcon from "@material-ui/icons/FilterListRounded";
-import { Button } from "@material-ui/core";
+import ClearIcon from "@material-ui/icons/Clear";
+import { Button, InputAdornment } from "@material-ui/core";
 import FilterDialog from "./FilterDialog";
 import { useRecoilState } from "recoil";
-import { MenuDrawerAtom } from "../Atoms";
+import { MenuDrawerAtom, EntryFilterAtom } from "../Atoms";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -28,6 +29,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     filterButton: {
       marginLeft: theme.spacing(2),
+    },
+    clearButton: {
+      color: theme.palette.common.white,
     },
     title: {
       flexGrow: 1,
@@ -79,14 +83,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-type SearchAppBarProps = {
-  onSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
-
-export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
+export default function SearchAppBar() {
   const classes = useStyles();
   const [isFilterDialogOpen, setFilterDialogOpen] = useState(false);
   const [menuDrawerState, setMenuDrawerState] = useRecoilState(MenuDrawerAtom);
+  const [entryFilterState, setEntryFilterState] = useRecoilState(EntryFilterAtom);
 
   return (
     <div className={classes.root}>
@@ -113,12 +114,40 @@ export default function SearchAppBar({ onSearchChange }: SearchAppBarProps) {
             <InputBase
               placeholder="Search…"
               autoFocus={true}
+              value={entryFilterState.searchText}
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
               inputProps={{ "aria-label": "search" }}
-              onChange={onSearchChange}
+              onChange={(event) => {
+                setEntryFilterState({
+                  ...entryFilterState,
+                  searchText: event.currentTarget.value,
+                });
+              }}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    title="Clear search text"
+                    aria-label="Clear search text"
+                    onClick={() => {
+                      setEntryFilterState({
+                        ...entryFilterState,
+                        searchText: "",
+                      });
+                    }}
+                    className={classes.clearButton}
+                    style={
+                      entryFilterState.searchText === ""
+                        ? { visibility: "hidden" }
+                        : { visibility: "visible" }
+                    }
+                  >
+                    <ClearIcon />
+                  </IconButton>
+                </InputAdornment>
+              }
             />
           </div>
           <Button
