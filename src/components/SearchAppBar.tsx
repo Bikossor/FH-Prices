@@ -129,7 +129,8 @@ export default function SearchAppBar() {
               endAdornment={
                 <InputAdornment position="end">
                   <IconButton
-                    aria-label="toggle password visibility"
+                    title="Clear search text"
+                    aria-label="Clear search text"
                     onClick={() => {
                       setEntryFilterState({
                         ...entryFilterState,
