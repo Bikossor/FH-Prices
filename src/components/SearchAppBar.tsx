@@ -123,7 +123,7 @@ export default function SearchAppBar() {
               onChange={(event) => {
                 setEntryFilterState({
                   ...entryFilterState,
-                  searchText: event.currentTarget.value.toLowerCase(),
+                  searchText: event.currentTarget.value,
                 });
               }}
               endAdornment={

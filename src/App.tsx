@@ -22,7 +22,7 @@ function App() {
   const { searchText } = useRecoilValue(EntryFilterAtom);
 
   useEffect(() => {
-    setEntries(filterEntries(searchText));
+    setEntries(filterEntries(searchText.toLowerCase()));
   }, [searchText])
 
   return (
