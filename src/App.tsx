@@ -4,10 +4,11 @@ import SearchAppBar from "./components/SearchAppBar";
 
 import { FH4 } from "./data/FH4";
 import EntryCard from "./components/EntryCard";
-import { useRecoilState } from "recoil";
-import { Entries } from "./Atoms";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { Entries, EntryFilterAtom } from "./Atoms";
 import { MenuDrawer } from "./components/MenuDrawer";
 import { AboutDialog } from "./components/AboutDialog";
+import { useEffect } from "react";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -18,14 +19,15 @@ const filterEntries = (searchText: string) =>
 
 function App() {
   const [entries, setEntries] = useRecoilState(Entries);
+  const { searchText } = useRecoilValue(EntryFilterAtom);
+
+  useEffect(() => {
+    setEntries(filterEntries(searchText));
+  }, [searchText])
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-      <SearchAppBar
-        onSearchChange={(event) => {
-          setEntries(filterEntries(event.currentTarget.value.toLowerCase()));
-        }}
-      />
+      <SearchAppBar />
       <main style={{ display: "flex", justifyContent: "center" }}>
         <div style={{ minWidth: "50%", marginTop: "4rem" }}>
           {entries.map((car, index) => (

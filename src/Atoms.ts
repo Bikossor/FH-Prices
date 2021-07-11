@@ -19,3 +19,10 @@ export const AboutDialogAtom = atom({
         isOpen: false,
     }
 });
+
+export const EntryFilterAtom = atom({
+    key: "entry-filter",
+    default: {
+        searchText: "",
+    }
+});
