@@ -10,7 +10,7 @@ import { MenuDrawer } from "./components/MenuDrawer";
 import { AboutDialog } from "./components/AboutDialog";
 import { useEffect } from "react";
 import { createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
+import { grey, pink } from "@material-ui/core/colors";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -31,7 +31,10 @@ function App() {
           type: prefersDarkMode ? 'dark' : 'light',
           primary: {
             main: grey["900"],
-          }
+          },
+          secondary: {
+            main: prefersDarkMode ? pink["200"] : pink["A400"]
+          },
         },
       }),
     [prefersDarkMode],
