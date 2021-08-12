@@ -4,26 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from '@material-ui/styles';
-import { createMuiTheme } from '@material-ui/core';
-import { grey } from '@material-ui/core/colors';
-import { RecoilRoot } from "recoil";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: grey["900"]
-    }
-  }
-})
+import { RecoilRoot } from 'recoil';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <RecoilRoot>
-        <App />
-      </RecoilRoot>
-    </ThemeProvider>
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
 );

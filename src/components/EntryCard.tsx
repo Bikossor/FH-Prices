@@ -32,7 +32,6 @@ export default function EntryCard({
         <div style={{ display: "flex", alignItems: "center" }}>
           <i
             style={{
-              color: "rgba(0, 0, 0, 0.54)",
               marginRight: "1rem",
               fontSize: "1.2rem",
             }}
