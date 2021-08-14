@@ -1,0 +1,98 @@
+.rarity.common {
+  width: 12px;
+  background-color: transparent;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    45deg,
+    #06794a,
+    #06794a 5px,
+    #03301d 5px,
+    #03301d 10px
+  );
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-bottom: -14px;
+}
+
+.rarity.rare {
+  width: 12px;
+  background-color: transparent;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    135deg,
+    #2c9fe5,
+    #2c9fe5 5px,
+    #1676b1 5px,
+    #1676b1 10px
+  );
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-bottom: -14px;
+}
+
+.rarity.epic {
+  width: 12px;
+  background-color: transparent;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    0deg,
+    #8a5dbb,
+    #8a5dbb 5px,
+    #653c90 5px,
+    #653c90 10px
+  );
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-bottom: -14px;
+}
+
+.rarity.legendary {
+  width: 12px;
+  /* background-color: transparent;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    45deg,
+    #ff9d00,
+    #ff9d00 5px,
+    #b36e00 5px,
+    #b36e00 10px
+  ); */
+  background-color: #00b5f7;
+    background-size: 53px 53px;
+    background-image: radial-gradient(
+        transparent 28px,
+        #ffffff 28px,
+        #ffffff 32px,
+        transparent 32px
+    );
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-bottom: -14px;
+}
+
+.rarity.forza-edition {
+  width: 12px;
+  background-color: #cc20cf;
+  opacity: 0.8;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #e257e5 25%,
+      transparent 25%,
+      transparent 75%,
+      #e257e5 75%,
+      #e257e5
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #e257e5 25%,
+      transparent 25%,
+      transparent 75%,
+      #e257e5 75%,
+      #e257e5
+    );
+  background-position: 0 0, 9px 9px;
+  background-size: 18px 18px;
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-bottom: -14px;
+}

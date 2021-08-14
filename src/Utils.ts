@@ -41,14 +41,14 @@ export const strVehicleType = (type: VehicleType) => {
 export const getRarityColor = (rarity: string) => {
   switch (rarity) {
     case "Common":
-      return "#06794a";
+      return "common";
     case "Rare":
-      return "#2c9fe5";
+      return "rare";
     case "Epic":
-      return "#6f26bc";
+      return "epic";
     case "Legendary":
-      return "#ff9d00";
+      return "legendary";
     case "Forza Edition":
-      return "#e257e5";
+      return "forza-edition";
   }
 };
