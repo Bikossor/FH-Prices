@@ -13,8 +13,7 @@ import { AboutDialogAtom, MenuDrawerAtom } from "../Atoms";
 
 export const MenuDrawer = () => {
   const [menuDrawerState, setMenuDrawerState] = useRecoilState(MenuDrawerAtom);
-  const [aboutDialogState, setAboutDialogState] =
-    useRecoilState(AboutDialogAtom);
+  const [aboutDialogState, setAboutDialogState] = useRecoilState(AboutDialogAtom);
 
   const closeMenuDrawer = () => {
     setMenuDrawerState({ ...menuDrawerState, isOpen: false });
@@ -41,12 +40,7 @@ export const MenuDrawer = () => {
           </ListItemIcon>
           <ListItemText>About</ListItemText>
         </ListItem>
-        <ListItem
-          button
-          component="a"
-          href="https://ko-fi.com/bikossor"
-          target="_blank"
-        >
+        <ListItem button component="a" href="https://ko-fi.com/bikossor" target="_blank">
           <ListItemIcon>
             <LocalCafeRoundedIcon />
           </ListItemIcon>

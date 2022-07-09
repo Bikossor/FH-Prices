@@ -28,7 +28,13 @@ export default function EntryCard({
 }: EntryCardProps) {
   return (
     <Card variant="outlined" style={{ margin: ".5rem 0" }}>
-      <CardContent style={{ display: "flex", flexDirection: "row", borderRight: `7px solid ${getRarityColor(rarity)}` }}>
+      <CardContent
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          borderRight: `7px solid ${getRarityColor(rarity)}`,
+        }}
+      >
         <div style={{ display: "flex", alignItems: "center" }}>
           <i
             style={{
