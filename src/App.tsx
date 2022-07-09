@@ -11,6 +11,7 @@ import { AboutDialog } from "./components/AboutDialog";
 import { useEffect } from "react";
 import { createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@material-ui/core";
 import { grey, pink } from "@material-ui/core/colors";
+import { NoDataMessage } from "./components/NoDataMessage";
 
 const filterEntries = (searchText: string) =>
   FH4.filter(
@@ -51,17 +52,19 @@ function App() {
         <SearchAppBar />
         <main style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ minWidth: "50%", marginTop: "4rem" }}>
-            {entries.map((car, index) => (
-              <EntryCard
-                manufacturer={car.Manufacturer}
-                model={car.Model}
-                price={car.Price}
-                rarity={car.Rarity}
-                type={car.Type}
-                year={car.Year}
-                key={index}
-              />
-            ))}
+            {entries.length > 0 &&
+              entries.map((car, index) => (
+                <EntryCard
+                  manufacturer={car.Manufacturer}
+                  model={car.Model}
+                  price={car.Price}
+                  rarity={car.Rarity}
+                  type={car.Type}
+                  year={car.Year}
+                  key={index}
+                />
+              ))}
+            {entries.length === 0 && <NoDataMessage />}
           </div>
         </main>
         <MenuDrawer />
