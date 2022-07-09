@@ -73,7 +73,6 @@
 .rarity.forza-edition {
   width: 12px;
   background-color: #cc20cf;
-  opacity: 0.8;
   background-image: repeating-linear-gradient(
       45deg,
       #e257e5 25%,
@@ -90,8 +89,8 @@
       #e257e5 75%,
       #e257e5
     );
-  background-position: 0 0, 9px 9px;
-  background-size: 18px 18px;
+  background-position: 0 0, 8px 8px;
+  background-size: 16px 16px;
   margin-top: -16px;
   margin-right: -16px;
   margin-bottom: -14px;
