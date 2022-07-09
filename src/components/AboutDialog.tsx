@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  createStyles,
-  Theme,
-  withStyles,
-  WithStyles,
-} from "@material-ui/core/styles";
+import { createStyles, Theme, withStyles, WithStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
@@ -44,11 +39,7 @@ const DialogTitle = withStyles(styles)((props: DialogTitleProps) => {
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
       {onClose ? (
-        <IconButton
-          aria-label="close"
-          className={classes.closeButton}
-          onClick={onClose}
-        >
+        <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
           <CloseIcon />
         </IconButton>
       ) : null}
@@ -70,8 +61,7 @@ const DialogActions = withStyles((theme: Theme) => ({
 }))(MuiDialogActions);
 
 export const AboutDialog = () => {
-  const [aboutDialogState, setAboutDialogState] =
-    useRecoilState(AboutDialogAtom);
+  const [aboutDialogState, setAboutDialogState] = useRecoilState(AboutDialogAtom);
 
   const handleClose = () => {
     setAboutDialogState({ ...aboutDialogState, isOpen: false });
@@ -88,10 +78,9 @@ export const AboutDialog = () => {
       </DialogTitle>
       <DialogContent>
         <Typography>
-          This open-source application is for every Forza Horizon 4 driver who
-          wants to know if a car is a good deal or not when buying it at the
-          auction house. You can easily search by manufacturer or model name and
-          compare prices.
+          This open-source application is for every Forza Horizon 4 driver who wants to
+          know if a car is a good deal or not when buying it at the auction house. You can
+          easily search by manufacturer or model name and compare prices.
         </Typography>
         <Divider style={{ margin: "1rem 0" }} />
         <Typography>
@@ -108,42 +97,25 @@ export const AboutDialog = () => {
         <Divider style={{ margin: "1rem 0" }} />
         <Typography>
           Developed by{" "}
-          <Link
-            color="secondary"
-            href="https://github.com/Bikossor"
-            target="_blank"
-          >
+          <Link color="secondary" href="https://github.com/Bikossor" target="_blank">
             André Lichtenthäler (Bikossor)
           </Link>
         </Typography>
         <Typography>
           Deployed by{" "}
-          <Link
-            color="secondary"
-            href="https://pages.cloudflare.com/"
-            target="_blank"
-          >
+          <Link color="secondary" href="https://pages.cloudflare.com/" target="_blank">
             Cloudflare Pages
           </Link>
         </Typography>
         <Typography>
           Data used from{" "}
-          <Link
-            color="secondary"
-            href="http://www.manteomax.com/"
-            target="_blank"
-          >
+          <Link color="secondary" href="http://www.manteomax.com/" target="_blank">
             ManteoMax's FORZA spreadsheets
           </Link>
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Button
-          autoFocus
-          onClick={handleClose}
-          color="secondary"
-          variant="contained"
-        >
+        <Button autoFocus onClick={handleClose} color="secondary" variant="contained">
           Close
         </Button>
       </DialogActions>

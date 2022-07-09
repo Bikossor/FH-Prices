@@ -4,12 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
-import {
-  createStyles,
-  alpha,
-  Theme,
-  makeStyles,
-} from "@material-ui/core/styles";
+import { createStyles, alpha, Theme, makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import FilterListRoundedIcon from "@material-ui/icons/FilterListRounded";
@@ -80,7 +75,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
       },
     },
-  })
+  }),
 );
 
 export default function SearchAppBar() {
@@ -98,9 +93,7 @@ export default function SearchAppBar() {
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
-            onClick={() =>
-              setMenuDrawerState({ ...menuDrawerState, isOpen: true })
-            }
+            onClick={() => setMenuDrawerState({ ...menuDrawerState, isOpen: true })}
           >
             <MenuIcon />
           </IconButton>
@@ -120,7 +113,7 @@ export default function SearchAppBar() {
                 input: classes.inputInput,
               }}
               inputProps={{ "aria-label": "search" }}
-              onChange={(event) => {
+              onChange={event => {
                 setEntryFilterState({
                   ...entryFilterState,
                   searchText: event.currentTarget.value,

@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  createStyles,
-  Theme,
-  withStyles,
-  WithStyles,
-} from "@material-ui/core/styles";
+import { createStyles, Theme, withStyles, WithStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
@@ -41,11 +36,7 @@ const DialogTitle = withStyles(styles)((props: DialogTitleProps) => {
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
       {onClose ? (
-        <IconButton
-          aria-label="close"
-          className={classes.closeButton}
-          onClick={onClose}
-        >
+        <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
           <CloseIcon />
         </IconButton>
       ) : null}
@@ -168,7 +159,7 @@ export default function FilterDialog({
         <Typography variant="h6">Types</Typography>
         <div style={{ marginLeft: "1rem" }}>
           <FormGroup>
-            {CarTypes.map((carType) => (
+            {CarTypes.map(carType => (
               <FormControlLabel
                 key={carType.id}
                 control={
