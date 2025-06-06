@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-import { ReactComponent as NoDataIllustration } from "../illustrations/undraw_no_data.svg";
+import { NoDataIllustration } from "../illustrations/NoDataIllustration";
 
 export const NoDataMessage = () => {
   return (
