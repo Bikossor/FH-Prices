@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "vite": "^6.3.5"
   }
 }
